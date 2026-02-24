@@ -3,6 +3,6 @@
 ---
 ### Índice
 - [Ponteiros, Structs & Malloc](https://github.com/TaylanHahn/Estrutura-de-Dados-I)
-- [Manipulação de Arquivos](./manipulacao-arquivos.md)
+- [Manipulação de Arquivos](./documentacao/manipulacao-arquivos.md)
   
 
