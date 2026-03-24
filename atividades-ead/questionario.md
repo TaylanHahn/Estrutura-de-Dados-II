@@ -1,7 +1,7 @@
 # Questões objetivas (1-20)
 
 ### 1. Considerando o programa abaixo, responda:
-<img src="./atividades-ead/img/01.png">
+<img src="atividades-ead/img/01.png">
 Escolha uma opção:
 
 Escolha uma opção:
@@ -19,7 +19,7 @@ e.30 ✅
 ---
 
 ### 2. Considerando a estrutura Pessoa, como é possível acessar via ponteiro a propriedade nome?
-<img src="./atividades-ead/img/02.png">
+<img src="atividades-ead/img/02.png">
 
 a. aluno.nome
 
