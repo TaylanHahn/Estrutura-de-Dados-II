@@ -2,9 +2,8 @@
 
 ### 1. Considerando o programa abaixo, responda:
 ![Descrição da imagem](img/01.png)
-Escolha uma opção:
 
-Escolha uma opção:
+**Escolha uma opção:**
 
 a.10
 
@@ -20,6 +19,7 @@ e.30 ✅
 
 ### 2. Considerando a estrutura Pessoa, como é possível acessar via ponteiro a propriedade nome?
 ![Descrição da imagem](img/02.png)
+
 a. aluno.nome
 
 b. Cpessoa->nome
@@ -111,7 +111,8 @@ if (p) {
     } 
 }
 ````
-Escolha uma opção:
+
+**Escolha uma opção:**
 
 a.Inserção no inicio da lista, retornando último Nó
 
