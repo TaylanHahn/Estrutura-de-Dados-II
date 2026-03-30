@@ -1,6 +1,6 @@
 # Questões objetivas (1-20)
 
-### 1. Considerando o programa abaixo, responda:
+### 📌 1. Considerando o programa abaixo, responda:
 ![Descrição da imagem](img/01.png)
 
 **Escolha uma opção:**
@@ -17,7 +17,7 @@ e.30 ✅
 
 ---
 
-### 2. Considerando a estrutura Pessoa, como é possível acessar via ponteiro a propriedade nome?
+### 📌 2. Considerando a estrutura Pessoa, como é possível acessar via ponteiro a propriedade nome?
 ![Descrição da imagem](img/02.png)
 
 a. aluno.nome
@@ -32,7 +32,7 @@ e. paluno->nome ✅
 
 ---
 
-### 3. Conhecendo parte da implementação do Código abaixo, Qual é o método de inserção de um Novo Nó a lista?
+### 📌 3. Conhecendo parte da implementação do Código abaixo, Qual é o método de inserção de um Novo Nó a lista?
 
 ````c
 Lista * set_lista(Lista * l, int a, char s[50]) {
@@ -124,4 +124,46 @@ d.Inserção no final de lista, retornando o último Nó
 
 e.Inserção no inicio da lista, retornando o primeiro Nó ✅
 
+---
 
+### 📌 4. Considerando o bloco de memória com endereço inicial **0xC8** e com tamanho de cada célula de **8 bits**:
+
+| Endereço | Dado (ASCII) ou Endereço |
+|----------|--------------------------|
+| 0xC8     |                          |
+| 0xC9     |                          |
+| 0xCA     |                          |
+| 0xCB     |                          |
+| 0xCC     |                          |
+| 0xCD     |                          |
+| 0xCE     |                          |
+| 0xCF     |                          |
+
+### 💻 Trecho do Programa
+
+```c
+char palavra[3] = {'A','B','C'}; 
+char *ppalavra = palavra;
+````
+
+**Explicação:** 
+- Cada char ocupa 1 byte (8 bits)
+- Endereço inicial de palavra = 0xCA
+
+**Logo:** 'A' → 0xCA  // 'B' → 0xCB  //  'C' → 0xCC
+
+- ppalavra guarda o endereço inicial de palavra, ou seja: 0xCA
+- Endereço de ppalavra = 0xCF
+
+**Resposta:**
+
+| Endereço | Dado (ASCII) ou Endereço |
+|----------|--------------------------|
+| 0xC8     |                          |
+| 0xC9     |                          |
+| 0xCA     | 'A'                      |
+| 0xCB     | 'B'                      |
+| 0xCC     | 'C'                      |
+| 0xCD     |                          |
+| 0xCE     |                          |
+| 0xCF     | 0xCA                     |
