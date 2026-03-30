@@ -1,6 +1,6 @@
 # Questões objetivas (1-20)
 
-### 📌 1. Considerando o programa abaixo, responda:
+## 📌 1. Considerando o programa abaixo, responda:
 ![Descrição da imagem](img/01.png)
 
 **Escolha uma opção:**
@@ -17,7 +17,7 @@ e.30 ✅
 
 ---
 
-### 📌 2. Considerando a estrutura Pessoa, como é possível acessar via ponteiro a propriedade nome?
+## 📌 2. Considerando a estrutura Pessoa, como é possível acessar via ponteiro a propriedade nome?
 ![Descrição da imagem](img/02.png)
 
 a. aluno.nome
@@ -32,7 +32,7 @@ e. paluno->nome ✅
 
 ---
 
-### 📌 3. Conhecendo parte da implementação do Código abaixo, Qual é o método de inserção de um Novo Nó a lista?
+## 📌 3. Conhecendo parte da implementação do Código abaixo, Qual é o método de inserção de um Novo Nó a lista?
 
 ````c
 Lista * set_lista(Lista * l, int a, char s[50]) {
@@ -126,7 +126,7 @@ e.Inserção no inicio da lista, retornando o primeiro Nó ✅
 
 ---
 
-### 📌 4. Considerando o bloco de memória com endereço inicial **0xC8** e com tamanho de cada célula de **8 bits**:
+## 📌 4. Considerando o bloco de memória com endereço inicial **0xC8** e com tamanho de cada célula de **8 bits**:
 
 | Endereço | Dado (ASCII) ou Endereço |
 |----------|--------------------------|
