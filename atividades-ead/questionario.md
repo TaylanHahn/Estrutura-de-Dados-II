@@ -166,3 +166,193 @@ char *ppalavra = palavra;
 - c. O operador * tem como significado o valor de. O segundo operador é &, que é o complemento de *. O * é um operador unário que devolve o endereço da variável que indica.
 - d. O operador & tem como significado o valor de. O segundo operador é *, que é o complemento de &. O * é um operador unário que devolve o endereço da variável que indica. 
 - **e. O operador & tem como significado o endereço de. O segundo operador é (*), que é o complemento de &. O (*) é um operador unário que devolve o valor da variável localizada no endereço que indica.** ✅
+
+---
+
+## 📌 6. Marque a alternativa correta:
+
+a. Em uma lista circular, o primeiro elemento tem como anterior o valor NULL para indicar o primeiro nó  da lista.
+**b. Em uma lista circular, o último elemento tem como próximo o primeiro elemento da lista, o que forma um ciclo.** ✅
+c. Em uma lista encadeada, o último elemento tem como próximo o primeiro elemento da lista, o que forma um ciclo.
+d. Em uma lista circular, o último elemento tem como próximo o valor NULL para indicar o final da lista.
+e. N.D.A.
+
+---
+
+## 📌 7. Dada parte do código abaixo, marque a alternativa Correta:
+````c
+int x[10]= {10,11,21,31,41,51,61,71,81,91};
+int *p, a, *i;
+i=&a;
+p=&a;
+a = 30;
+p=x;
+````
+Se você quiser usar o conteúdo do ponteiro *p 9 posições adiante, deverá escrever:
+- a. *p[9];
+- b. (*p+9);
+- c. &p[9];
+- **d. *(p+9);*** ✅
+- e. NDA;
+
+---
+
+## 📌 8. Complete o espaço em branco (______) com a palavra correta:
+
+- A função _______, libera a memória alocada. >>> **FREE**
+ - A função ______ realiza a alocação de memória, porém deve-se informar a quantidade de blocos que se deseja alocar (informar os Bytes e o tamanho de cada bloco). >>> **CALLOC**
+ - Para determinar o tamanho alocado por uma variável, deve-se usar o comando _______.  >>> **SIZEOF**
+ - A função ______ realiza a alocação de memória informada a quantidade de bytes que se deseja alocar. >>> **MALLOC**
+ - A  função ______, serve para expandir uma área de memória alocada. >>> **REALLOC**
+
+---
+
+## 9. Dado a seguinte TAD abaixo, contendo uma estrutura chamada Triangulo, falta implementar a função (ou método) que cria o objeto triangulo e retorna o valor conforme especifico no cabeçalho do TAD. 
+
+````c
+#include <stdlib.h>
+#include <stdio.h>
+typedef struct triangulo Triangulo;
+Triangulo * cria_triangulo(int a, int b, int c);
+void free_triangulo(Triangulo ** t);
+void set_triangulo(Triangulo * t, int a, int b, int c);
+void get_triangulo(Triangulo * t);
+struct triangulo
+{
+   int ladoa;
+   int ladob;
+   int ladoc;
+};
+Triangulo * cria_triangulo(int a, int b, int c)
+{
+.
+.
+.
+.
+.
+.
+.
+
+}
+void free_triangulo(Triangulo ** t)
+{
+  free(*t);
+  *t = NULL;
+}
+void set_triangulo(Triangulo * t, int a, int b, int c){
+   t->ladoa = a;
+   t->ladob = b;
+   t->ladoc = c;
+}
+void get_triangulo(Triangulo * t)
+{if (t == NULL){
+   printf("Erro de alocacao de memoria!\n");
+}
+else
+{
+   int a, b, c;
+   a = t->ladoa;
+   b = t->ladob;
+   c = t->ladoc;
+   if ((a == b) and (b == c))
+    printf ("\nequilatero\n");
+   else if ((a!=b) and (b!=c) and (c != a))
+    printf ("\nescaleno\n");
+   else
+   printf ("\nisosceles\n");
+}
+}
+````
+Qual opção representa a forma correta de implementação da função Cria Triangulo?
+
+- a.
+````c
+Triangulo  cria_triangulo(int a, int b, int c) {
+ Triangulo * t = (Triangulo *) malloc (sizeof(Triangulo));
+ if (t == NULL){
+     printf("Erro de alocacao de memoria!\n");
+     exit(1);
+    } else {
+     t->ladoa = a;
+     t->ladob = b;
+     t->ladoc = c;
+     return Triangulo;
+    }
+}
+````
+> Retorno da função está errado: Triangulo (deveria ser `Triangulo *`). `return Triangulo;` → inválido ❌
+
+- b.
+````c
+Triangulo * cria_triangulo(int a, int b, int c){
+ Triangulo * t = (Triangulo *) malloc (sizeof(Triangulo));
+ if (t != NULL){
+     printf("Erro de alocacao de memoria!\n");
+     exit(1);
+    } else {
+     t->ladoa = a;
+     t->ladob = b;
+     t->ladoc = c;
+     return t;
+    }
+}
+````
+> Condição invertida: `if (t != NULL)` trata sucesso como erro ❌
+
+- c. ✅
+````
+Triangulo * cria_triangulo(int a, int b, int c) {
+ Triangulo * t = (Triangulo *) malloc (sizeof(Triangulo));
+ if (t == NULL) {
+     printf("Erro de alocacao de memoria!\n");
+     exit(1);
+    } else {
+      t->ladoa = a;
+      t->ladob = b;
+      t->ladoc = c;
+      return t;
+    }
+}
+````
+> ✔ Aloca memória corretamente com malloc
+> 
+> ✔ Verifica erro com t == NULL
+> 
+> ✔ Inicializa os campos da struct
+> 
+> ✔ Retorna o ponteiro t corretamente
+
+- d.
+````
+Triangulo * cria_triangulo(int a, int b, int c) {
+ Triangulo * t = (Triangulo *) malloc (sizeof(Triangulo));
+ if (t == NULL) {
+     printf("Erro de alocacao de memoria!\n");
+     exit(1);
+    } else {
+     t->ladoa = a;
+     t->ladob = b;
+     t->ladoc = c;
+     return * Triangulo;
+    }
+}
+````
+> `return * Triangulo;` → inválido (não faz sentido retornar isso) ❌
+
+- e.
+````
+Triangulo * cria_triangulo(int a, int b, int c){
+ Triangulo * t = (Triangulo *) malloc (sizeof(Triangulo));
+ if (t != NULL){
+     printf("Erro de alocacao de memoria!\n");
+     exit(1);
+  } else {
+     t->ladoa = a;
+     t->ladob = b;
+     t->ladoc = c;
+     return * Triangulo;
+    }
+````
+> Mesmo erro da b (condição invertida). E também erro no `return * Triangulo` ❌
+
+---- 
