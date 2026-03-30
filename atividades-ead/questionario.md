@@ -5,30 +5,22 @@
 
 **Escolha uma opção:**
 
-a.10
-
-b.21
-
-c.11
-
-d.91
-
-e.30 ✅
+- a.10
+- b.21
+- c.11
+- d.91
+- **e.30** ✅
 
 ---
 
 ## 📌 2. Considerando a estrutura Pessoa, como é possível acessar via ponteiro a propriedade nome?
 ![Descrição da imagem](img/02.png)
 
-a. aluno.nome
-
-b. Cpessoa->nome
-
-c. aluno->nome
-
-d. Cpessoa.nome
-
-e. paluno->nome ✅
+- a. aluno.nome
+- b. Cpessoa->nome
+- c. aluno->nome
+- d. Cpessoa.nome
+- **e. paluno->nome** ✅
 
 ---
 
@@ -114,15 +106,11 @@ if (p) {
 
 **Escolha uma opção:**
 
-a.Inserção no inicio da lista, retornando último Nó
-
-b. Nenhuma das Alternativas.
-
-c.Inserção no final de lista, retornando o primeiro Nó
-
-d.Inserção no final de lista, retornando o último Nó
-
-e.Inserção no inicio da lista, retornando o primeiro Nó ✅
+- a.Inserção no inicio da lista, retornando último Nó
+- b. Nenhuma das Alternativas.
+- c.Inserção no final de lista, retornando o primeiro Nó
+- d.Inserção no final de lista, retornando o último Nó
+- **e.Inserção no inicio da lista, retornando o primeiro Nó** ✅
 
 ---
 
@@ -167,3 +155,14 @@ char *ppalavra = palavra;
 | 0xCD     |                          |
 | 0xCE     |                          |
 | 0xCF     | 0xCA                     |
+
+---
+
+## 📌 5. Marque a alternativa correta:
+
+**Escolha uma opção:**
+- a. N.D.A.
+- b. O operador * tem como significado o endereço de. O segundo operador é &, que é o complemento de &. O & é um operador unário que devolve o valor da variável localizada no endereço que indica. 
+- c. O operador * tem como significado o valor de. O segundo operador é &, que é o complemento de *. O * é um operador unário que devolve o endereço da variável que indica.
+- d. O operador & tem como significado o valor de. O segundo operador é *, que é o complemento de &. O * é um operador unário que devolve o endereço da variável que indica. 
+- **e. O operador & tem como significado o endereço de. O segundo operador é (*), que é o complemento de &. O (*) é um operador unário que devolve o valor da variável localizada no endereço que indica.** ✅
