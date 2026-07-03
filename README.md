@@ -1,5 +1,4 @@
-# Estrutura de Dados II
-### **Prova 1** `30/03`  —  **Prova 2** `01/06`  —  **Prova 3** `29/06`
+## Estrutura de Dados II
 ---
 ### Índice
 - [Ponteiros, Structs & Malloc](https://github.com/TaylanHahn/Estrutura-de-Dados-I)
